@@ -3,7 +3,7 @@ import { toggleMenu } from "../utils/appSlice";
 
 const Head = () => {
   const dispatch = useDispatch();
-  const toggelMenuHandler = () => {
+  const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
 
@@ -11,7 +11,7 @@ const Head = () => {
     <div className="grid grid-flow-col p-5 m-2 shadow-lg">
       <div className="flex col-span-1">
         <img
-          onClick={() => toggelMenuHandler()}
+          onClick={() => toggleMenuHandler()}
           className="h-8 cursor-pointer"
           alt="Menu"
           src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-4.png"
